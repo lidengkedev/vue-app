@@ -1,0 +1,33 @@
+@import './mixins/mixins.scss';
+@import './common/var.scss';
+
+.l-input {
+  font-size: $-input-font-size;
+  width: $-input-width;
+  height: $-input-height;
+  line-height: $-input-height;
+  padding: 5px 15px;
+  border: $-input-border;
+  border-radius: $-input-border-radius;
+  color: $-color-text-regular;
+  &:hover {
+    border-color: $-input-hover-border;
+  }
+  &:focus {
+    outline: none;
+    border-color: $-input-focus-border;
+  }
+  &:disabled {
+    border-color: $-input-disabled-color;
+    background-color: $-input-disabled-fill;
+    cursor: no-drop;
+  }
+}
+
+@include b(input) {
+  @include when(disabled) {
+    .l-input {
+      background-color: red;
+    }
+  }
+}
