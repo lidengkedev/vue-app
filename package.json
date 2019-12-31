@@ -39,5 +39,26 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lidengkedev/vue-app.git"
+  },
+  "keywords": [
+    "vue",
+    "axios",
+    "vuex",
+    "router"
+  ],
+  "author": "lidengke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lidengkedev/vue-app/issues"
+  },
+  "homepage": "https://github.com/lidengkedev/vue-app#readme"
 }
