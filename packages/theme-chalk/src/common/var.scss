@@ -9,20 +9,23 @@ $-color-text-placeholder: #C0C4CC !default;
 $-border-color-base: #DCDFE6 !default;
 $-color-primary: #409EFF !default;
 $-background-color-base: #F5F7FA !default;
+$-color-white: #FFFFFF !default;
 
 /* Border
  ***************************/
 $-border-width-base: 1px !default;
 $-border-style-base: solid !default;
 $-border-radius-base: 4px !default;
+$-border-color-light: #E4E7ED !default;
 $-border-base: $-border-width-base $-border-style-base $-border-color-base !default;
 $-border-color-hover: $-color-text-placeholder;
-$-border-color-light: #E4E7ED !default;
+$-border-color-extra-light: #F2F6FC !default;
 
 /* Disabled
  ****************************/
  $-disabled-border-base: $-border-color-light !default;
  $-disabled-fill-base: $-background-color-base !default;
+
 /* Input
  ***************************/
 $-input-font-size: $-font-size-base !default;
@@ -36,3 +39,10 @@ $-input-hover-border: $-border-color-hover !default;
 $-input-focus-border: $-color-primary !default;
 $-input-disabled-color: $-disabled-border-base !default;
 $-input-disabled-fill: $-disabled-fill-base !default;
+$-input-disabled-placeholder-color: $-color-text-placeholder !default;
+
+/* Backtop
+ **************************/
+$-backtop-font-color: $-color-primary !default;
+$-backtop-background-color: $-color-white !default;
+$-backtop-hover-background-color: $-border-color-extra-light !default;

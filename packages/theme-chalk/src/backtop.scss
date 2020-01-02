@@ -1,0 +1,33 @@
+@import './common/var';
+
+.l-backtop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: $-backtop-font-color;
+  background-color: $-backtop-background-color;
+  box-shadow: 0 0 6px rgba(0,0,0, .12);
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 5;
+  &:hover {
+    background-color: $-backtop-hover-background-color;
+  }
+}
+.l-fade-in-enter,
+.l-fade-in-leave-to {
+  opacity: 0;
+}
+.l-fade-in-enter-to,
+.l-fade-in-leave {
+  opacity: 1;
+}
+.l-fade-in-enter-active,
+.l-fade-in-leave-active {
+  transition: opacity .3s ease-in;
+}

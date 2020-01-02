@@ -10,6 +10,7 @@
   border: $-input-border;
   border-radius: $-input-border-radius;
   color: $-color-text-regular;
+  box-sizing: border-box;
   &:hover {
     border-color: $-input-hover-border;
   }
@@ -20,14 +21,10 @@
   &:disabled {
     border-color: $-input-disabled-color;
     background-color: $-input-disabled-fill;
-    cursor: no-drop;
-  }
-}
-
-@include b(input) {
-  @include when(disabled) {
-    .l-input {
-      background-color: red;
+    cursor: not-allowed;
+    &::placeholder {
+      color: $-input-disabled-placeholder-color;
     }
   }
 }
+

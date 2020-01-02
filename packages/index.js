@@ -5,13 +5,15 @@ import Input from './input/index.js';
 import Loading from './loading/index.js';
 import Message from './message/index.js';
 import Table from './table/index.js';
+import Backtop from './backtop/index.js';
 
 const components = [
   Button,
   Dialog,
   Form,
   Input,
-  Table
+  Table,
+  Backtop
 ];
 
 const install = function(Vue) {
@@ -38,5 +40,6 @@ export default {
   Input,
   Loading,
   Message,
-  Table
+  Table,
+  Backtop
 };

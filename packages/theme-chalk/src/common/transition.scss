@@ -1,0 +1,19 @@
+/* 淡入淡出
+ ****************************/
+// .l-fade-in-enter {
+//   opacity: 1;
+// }
+// .l-fade-in-enter-out {
+//   opacity: 0;
+// }
+// .l-fade-in-active-enter {
+//   transition: opacity .3s;
+// }
+.l-fade-in-enter-active,
+.l-fade-in-leave-active {
+  transition: all .3s cubic-bezier(.55,0,.1,1);
+}
+.l-fade-in-enter,
+.l-fade-in-leave-active {
+  opacity: 0;
+}
