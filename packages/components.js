@@ -6,6 +6,7 @@ import Loading from './loading/index.js';
 import Message from './message/index.js';
 import Table from './table/index.js';
 import Backtop from './backtop/index.js';
+import Floor from './floor/index.js';
 
 export {
   Button,
@@ -15,5 +16,6 @@ export {
   Loading,
   Message,
   Table,
-  Backtop
+  Backtop,
+  Floor
 };
