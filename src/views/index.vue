@@ -4,6 +4,9 @@
       <router-link v-for="(item, index) in menu" :key="index" :to="item.to" class="router-link">
         {{ item.name }}
       </router-link>
+      <router-link to="/example" class="router-link">
+        测试
+      </router-link>
     </div>
     <router-view />
   </div>
