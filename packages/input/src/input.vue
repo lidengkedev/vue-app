@@ -18,7 +18,8 @@
       @input="input"
       @focus="focus"
       @blur="blur"
-      @change="change">
+      @change="change"
+      ref="input">
     <i v-if="showPassword" class="icon-right" @click="handleShowPassword">icon</i>
   </div>
 </template>
@@ -49,7 +50,35 @@ export default {
       passwordVisible: false
     }
   },
+  computed: {
+    // 计算 v-model的值 变化
+    nativeInputValue() {
+      return this.value === undefined || this.value === null ? '' : String(this.value)
+    }
+  },
+  watch: {
+    value(newVal, oldVal) {
+      console.log([newVal, oldVal])
+    },
+    // 监听 v-model 值的变化，设置 input 的值
+    nativeInputValue() {
+      this.setNativeInputValue()
+    }
+  },
   methods: {
+    getInput() {
+      return this.$refs.input
+    },
+    setNativeInputValue() {
+      // 获取 input 元素
+      const input = this.getInput()
+      // 如果 input 元素不存在则退出
+      if (!input) return
+      // 如果 v-model 绑定的值与 input 元素的 value 值一致，则退出
+      if (input.value === this.nativeInputValue) return
+      // 根据 v-model 绑定的值 设置 input 元素 的值
+      input.value = this.nativeInputValue
+    },
     input(event) {
       this.$emit('input', event.target.value)
     },
