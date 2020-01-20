@@ -1,6 +1,7 @@
 <template>
   <div class="warpper">
     <l-input v-model="value"></l-input>
+    <l-input v-model="value"></l-input>
     <div>{{value}}</div>
   </div>
 </template>

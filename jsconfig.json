@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "baseUrl": "./",
+    "paths": {
+      "test/*": ["test/"],
+      "assets/*": ["src/assets/"],
+      "@/*": ["src/"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

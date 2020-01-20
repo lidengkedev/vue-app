@@ -7,6 +7,7 @@ import Message from './message/index.js';
 import Table from './table/index.js';
 import Backtop from './backtop/index.js';
 import Floor from './floor/index.js';
+import Select from './select/index.js';
 
 export {
   Button,
@@ -17,5 +18,6 @@ export {
   Message,
   Table,
   Backtop,
-  Floor
+  Floor,
+  Select
 };

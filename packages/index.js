@@ -6,6 +6,7 @@ import Loading from './loading/index.js';
 import Message from './message/index.js';
 import Table from './table/index.js';
 import Backtop from './backtop/index.js';
+import Select from './select/index.js'
 
 const components = [
   Button,
@@ -13,7 +14,8 @@ const components = [
   Form,
   Input,
   Table,
-  Backtop
+  Backtop,
+  Select
 ];
 
 const install = function(Vue) {
@@ -41,5 +43,6 @@ export default {
   Loading,
   Message,
   Table,
-  Backtop
+  Backtop,
+  Select
 };

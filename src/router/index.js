@@ -26,6 +26,12 @@ const routes = [
         meta: { title: 'Input' }
       },
       {
+        path: 'select',
+        name: 'select',
+        component: () => import('../views/Select.vue'),
+        meta: { title: 'Select' }
+      },
+      {
         path: 'floor',
         name: 'floor',
         component: () => import('../views/Floor.vue'),
