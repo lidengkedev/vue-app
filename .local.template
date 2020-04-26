@@ -1,0 +1,9 @@
+# NODE ENV
+# development | local | production
+NODE_ENV = 'development'
+
+# HOST
+VUE_APP_HOST = 'xxx.xxx.x.xxx'
+
+# PORT
+VUE_APP_PORT = xxxx

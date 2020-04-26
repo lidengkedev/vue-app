@@ -8,7 +8,7 @@
         测试
       </router-link>
     </div>
-    <router-view />
+    <router-view v-if="isActive" />
   </div>
 </template>
 
@@ -16,12 +16,27 @@
 export default {
   data() {
     return {
+      isActive: true,
       menu: []
     }
   },
   created() {
     const routes = this.$router.options.routes[0].children
     this.menu = routes.map(item => ({ name: (item.meta && item.meta.title) || '', to: `/${item.path}` }))
+  },
+  watch: {
+    '$route': 'fetchData',
+    // isActive(val) {
+    //   !val && (this.isActive = true)
+    // }
+  },
+  methods: {
+    fetchData() {
+      this.isActive = false
+      setTimeout(() => {
+        this.isActive = true
+      }, 100)
+    }
   }
 }
 </script>
